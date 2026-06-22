@@ -28,6 +28,7 @@ Partial Class dashboard
         lblTotalPelanggan = New Label()
         Label1 = New Label()
         Panel3 = New Panel()
+        PictureBox3 = New PictureBox()
         lblTotalPendapatan = New Label()
         Label5 = New Label()
         Panel4 = New Panel()
@@ -37,15 +38,14 @@ Partial Class dashboard
         MaterialProgressBar1 = New MaterialSkin.Controls.MaterialProgressBar()
         GroupBox1 = New GroupBox()
         dgvPaket = New DataGridView()
-        PictureBox3 = New PictureBox()
         Panel1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         Panel3.SuspendLayout()
+        CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
         Panel4.SuspendLayout()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         GroupBox1.SuspendLayout()
         CType(dgvPaket, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Panel1
@@ -74,11 +74,11 @@ Partial Class dashboard
         ' 
         lblTotalPelanggan.AutoSize = True
         lblTotalPelanggan.Font = New Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lblTotalPelanggan.Location = New Point(85, 373)
+        lblTotalPelanggan.Location = New Point(111, 373)
         lblTotalPelanggan.Name = "lblTotalPelanggan"
-        lblTotalPelanggan.Size = New Size(112, 47)
+        lblTotalPelanggan.Size = New Size(43, 47)
         lblTotalPelanggan.TabIndex = 0
-        lblTotalPelanggan.Text = "XXXX"
+        lblTotalPelanggan.Text = "X"
         ' 
         ' Label1
         ' 
@@ -102,15 +102,25 @@ Partial Class dashboard
         Panel3.Size = New Size(341, 837)
         Panel3.TabIndex = 0
         ' 
+        ' PictureBox3
+        ' 
+        PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), Image)
+        PictureBox3.Location = New Point(91, 444)
+        PictureBox3.Name = "PictureBox3"
+        PictureBox3.Size = New Size(148, 129)
+        PictureBox3.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox3.TabIndex = 1
+        PictureBox3.TabStop = False
+        ' 
         ' lblTotalPendapatan
         ' 
         lblTotalPendapatan.AutoSize = True
         lblTotalPendapatan.Font = New Font("Segoe UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lblTotalPendapatan.Location = New Point(79, 373)
+        lblTotalPendapatan.Location = New Point(53, 373)
         lblTotalPendapatan.Name = "lblTotalPendapatan"
-        lblTotalPendapatan.Size = New Size(136, 50)
+        lblTotalPendapatan.Size = New Size(46, 50)
         lblTotalPendapatan.TabIndex = 0
-        lblTotalPendapatan.Text = "Label1"
+        lblTotalPendapatan.Text = "X"
         ' 
         ' Label5
         ' 
@@ -148,11 +158,11 @@ Partial Class dashboard
         ' 
         lblTotalTransaksi.AutoSize = True
         lblTotalTransaksi.Font = New Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lblTotalTransaksi.Location = New Point(77, 373)
+        lblTotalTransaksi.Location = New Point(126, 373)
         lblTotalTransaksi.Name = "lblTotalTransaksi"
-        lblTotalTransaksi.Size = New Size(128, 47)
+        lblTotalTransaksi.Size = New Size(43, 47)
         lblTotalTransaksi.TabIndex = 0
-        lblTotalTransaksi.Text = "Label1"
+        lblTotalTransaksi.Text = "X"
         ' 
         ' Label3
         ' 
@@ -197,16 +207,6 @@ Partial Class dashboard
         dgvPaket.Size = New Size(574, 769)
         dgvPaket.TabIndex = 3
         ' 
-        ' PictureBox3
-        ' 
-        PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), Image)
-        PictureBox3.Location = New Point(91, 444)
-        PictureBox3.Name = "PictureBox3"
-        PictureBox3.Size = New Size(148, 129)
-        PictureBox3.SizeMode = PictureBoxSizeMode.StretchImage
-        PictureBox3.TabIndex = 1
-        PictureBox3.TabStop = False
-        ' 
         ' dashboard
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -226,12 +226,12 @@ Partial Class dashboard
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         Panel3.ResumeLayout(False)
         Panel3.PerformLayout()
+        CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
         Panel4.ResumeLayout(False)
         Panel4.PerformLayout()
         CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         GroupBox1.ResumeLayout(False)
         CType(dgvPaket, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
